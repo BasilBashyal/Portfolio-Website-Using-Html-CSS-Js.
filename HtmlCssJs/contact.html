@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Basil Bashyal</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="js/script.js" defer></script>
+</head>
+<body class="dark-theme">
+  <header>
+    <div class="logo">Basil</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact-section">
+    <h1>Contact Me</h1>
+    <form name="contactForm" onsubmit="return validateForm()" method="post" action="#">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" />
+
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" placeholder="Write your message here..." rows="5"></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <h2>Find me here:</h2>
+    <div class="map-container" style="margin-top: 20px; max-width: 600px; margin-left:auto; margin-right:auto;">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113037.68606980194!2d83.34532778475932!3d27.70407822642959!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39968901124deb15%3A0xde1bac94fa6297a9!2sNEPAL%20FOREST%20MONASTERY!5e0!3m2!1sen!2snp!4v1754495659098!5m2!1sen!2snp" 
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Basil Bashyal. All rights reserved.</p>
+  </footer>
+</body>
+</html>
